@@ -17,3 +17,12 @@ function processRequest(response) {
   })
 }
 
+makeRequest('Google').then(function (response) {
+  console.log(`response was received`);
+  return processRequest(response);
+
+}).then(function (processedResponse) {
+  console.log(processedResponse);
+}).catch(function (err) {
+  console.log(err);
+})
