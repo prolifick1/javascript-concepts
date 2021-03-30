@@ -6,3 +6,8 @@ myList.addEventListener('click', function (e) {
     target.style.backgroundColor = 'red';
   }
 })
+
+const newLi = document.createElement('li');
+newLi.textContent = 'dcode';
+
+myList.appendChild(newLi);
