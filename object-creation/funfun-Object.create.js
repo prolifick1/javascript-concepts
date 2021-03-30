@@ -11,3 +11,5 @@ Object.defineProperty(mark, 'sound', { value: 'MEAOWGE'});
 let grouch = Object.create(cat);
 Object.defineProperty(grouch, 'sound', { value: 'GROUCH!'});
 grouch.talk();
+
+console.log(cat.isPrototypeOf(mark));
