@@ -1,7 +1,13 @@
 let cat = {
-  talk : function() {
-    console.log('meow');
+  sound: 'meow',
+  talk() {
+    console.log(this.sound);
   }
 }
 
-cat.talk();
+
+let mark = Object.create(cat);
+Object.defineProperty(mark, 'sound', { value: 'MEAOWGE'});
+let grouch = Object.create(cat);
+Object.defineProperty(grouch, 'sound', { value: 'GROUCH!'});
+grouch.talk();
