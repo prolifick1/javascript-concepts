@@ -3,8 +3,8 @@ function talk() {
 }
 
 let boromir = {
+  talk,
   sound: 'one does not simply walk into mordor'
 }
 
-let boundTalk = talk.bind(boromir);
-boundTalk();
+boromir.talk();
