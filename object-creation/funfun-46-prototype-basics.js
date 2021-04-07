@@ -5,3 +5,10 @@ function talk() {
 let animal = {
   talk
 }
+
+let cat = {
+  sound: 'meow'
+}
+
+Object.setPrototypeOf(cat, animal);
+cat.talk();
