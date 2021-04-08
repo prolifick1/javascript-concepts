@@ -28,10 +28,15 @@ function processRequest(response) {
 // })
 
 async function doWork() {
-  const response = await makeRequest('Google');
+  try {
+  const response = await makeRequest('Facebook');
   console.log('Response Received');
   const processedResponse = await processRequest(response);
   console.log(processedResponse);
+  } catch(err) {
+    console.log(err);
+  }
+
 }
 
 doWork();
