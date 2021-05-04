@@ -7,4 +7,8 @@ let myCat = {
 }
 
 Object.setPrototypeOf(myCat, cat);
-console.log(myCat.breed);
+// console.log(myCat.breed);
+
+cat.legs = 4;
+
+console.log(myCat.__proto__);
