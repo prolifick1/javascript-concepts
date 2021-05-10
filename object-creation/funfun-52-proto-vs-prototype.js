@@ -1,5 +1,5 @@
 let cat = {
-  breed: 'munchkin cat'
+  legs: 4
 }
 
 let myCat = {
@@ -7,8 +7,6 @@ let myCat = {
 }
 
 Object.setPrototypeOf(myCat, cat);
-// console.log(myCat.breed);
-
-cat.legs = 4;
 
 console.log(myCat.__proto__);
+console.log(cat.isPrototypeOf(myCat));
